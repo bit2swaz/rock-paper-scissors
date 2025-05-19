@@ -1,2 +1,3 @@
-# rock-paper-scissors
-Rock Paper Scissors game built with JavaScript. A simple console-based implementation that allows a human player to compete against the computer in a five-round match. The project emphasizes core JavaScript concepts like functions, conditionals, and randomization.
+# Rock Paper Scissors - JavaScript Console Game
+
+This is a simple implementation of the classic game Rock Paper Scissors built using JavaScript. The game is played in the browser console, where a human player competes against the computer over five rounds. The game logic, including random choice generation for the computer and user input handling, is coded from scratch to showcase basic JavaScript functionality.
