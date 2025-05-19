@@ -1,40 +1,48 @@
 # Rock Paper Scissors - JavaScript Console Game
 
-This is a simple implementation of the classic game Rock Paper Scissors built using JavaScript. The game is played in the browser console, where a human player competes against the computer over five rounds. The game logic, including random choice generation for the computer and user input handling, is coded from scratch to showcase basic JavaScript functionality.
+This is a simple, foundational implementation of the classic Rock Paper Scissors game built entirely using vanilla JavaScript. The game is played through the browser console, where a human player competes against the computer for 5 rounds.
 
-## Installation:
+This project was built only using the JavaScript concepts covered in the early stages of The Odin Project. No libraries, no advanced features — just pure logic, functions, and conditionals to build working software from scratch. Even the `for` loop used here was learned and implemented ahead of the curriculum, by choice.
+
+## How to Run:
 - Clone the repository to your local machine:
     `git clone https://github.com/your-username/rock-paper-scissors-console.git`
-- Open the index.html file in your browser to start the game in the console.
+- Open the `index.html` file in any modern browser
+- Open DevTools (`Ctrl + Shift + I` or `F12`) and go to the **Console Tab**
+- The game will start automatically and prompt you to enter `rock`, `paper`, or `scissors`
 
 ## How to Play:
 - When prompted, type `rock`, `paper`, or `scissors` in the console.
-- The computer randomly picks one of the three choices and the round winner is displayed.
+- The computer randomly picks one of the three choices and the round winner along with the game score is displayed.
 - The game proceeds for 5 rounds, and the final score is shown at the end.
 
 ## Features:
-- Random choice generation for the computer.
-- Player input handling with prompt.
-- Displays a round winner and the final score after 5 rounds.
+- Randomized computer choice using `Math.random()`
+- Human input via `prompt()`
+- Case-insensitive input handling
+- Score tracking and winner declaration after each round and after the final round
 
-## Usage Example:
+## Sample Output:
 Here’s what you will see in the console while playing the game:
 ```
-You chose Rock!
-Computer chose Scissors!
-You win! Rock beats Scissors.
+Let's play 5 rounds of Rock Paper Scissors!
 
-Round 1: You win! Current score - Player: 1, Computer: 0
+--- Round 1 ---
+You chose rock
+The computer chose scissors
+You win! rock beats scissors
+Current Score - Human: 1 Computer: 0
 
-You chose Paper!
-Computer chose Rock!
-You win! Paper beats Rock.
-
-Round 2: You win! Current score - Player: 2, Computer: 0
 ...
+--- Game Over! ---
+You are the overall winner!
 ```
-## Contributions:
-Feel free to fork this project, open issues or submit pull requests for improvements!
+## Developer Note:
+This is not a polished project. It is not supposed to be.
+It was built purely to practice problem-solving and converting logic into code.
+No GUI, no styling, no extra features. Just raw execution.
+
+Portfolio projects with UI and scalability will come next.
 
 ## License:
 MIT License
