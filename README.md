@@ -16,3 +16,20 @@ This is a simple implementation of the classic game Rock Paper Scissors built us
 - Random choice generation for the computer.
 - Player input handling with prompt.
 - Displays a round winner and the final score after 5 rounds.
+
+## Usage Example:
+Here’s what you will see in the console while playing the game:
+```
+You chose Rock!
+Computer chose Scissors!
+You win! Rock beats Scissors.
+
+Round 1: You win! Current score - Player: 1, Computer: 0
+
+You chose Paper!
+Computer chose Rock!
+You win! Paper beats Rock.
+
+Round 2: You win! Current score - Player: 2, Computer: 0
+...
+```
