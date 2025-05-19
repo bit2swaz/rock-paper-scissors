@@ -48,7 +48,12 @@
             }
         }
 
+        const humanSelection = getHumanChoice();
+        const computerSelection = getComputerChoice();
+        playRound(humanSelection, computerSelection);
 
+        console.log("Current Human Score: ", humanScore);
+        console.log("Current Computer Score: ", computerScore)
     </script>
 </body>
 </html>
