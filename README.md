@@ -35,3 +35,6 @@ Round 2: You win! Current score - Player: 2, Computer: 0
 ```
 ## Contributions:
 Feel free to fork this project, open issues or submit pull requests for improvements!
+
+## License:
+MIT License
