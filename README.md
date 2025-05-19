@@ -11,3 +11,8 @@ This is a simple implementation of the classic game Rock Paper Scissors built us
 - When prompted, type `rock`, `paper`, or `scissors` in the console.
 - The computer randomly picks one of the three choices and the round winner is displayed.
 - The game proceeds for 5 rounds, and the final score is shown at the end.
+
+## Features:
+- Random choice generation for the computer.
+- Player input handling with prompt.
+- Displays a round winner and the final score after 5 rounds.
