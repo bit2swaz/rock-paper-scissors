@@ -24,6 +24,30 @@
             return userInput;
         }
 
+        let humanScore = 0;
+        let computerScore = 0;
+
+        function playRound(humanChoice, computerChoice) {
+            const lowerHumanChoice = humanChoice.toLowerCase();
+
+            console.log("You chose ", lowerHumanChoice)
+            console.log("The computer chose ", computerChoice);
+
+            if (lowerHumanChoice === computerChoice); {
+                console.log("It's a tie!");
+            } else if (
+                (lowerHumanChoice === "rock" && computerChoice === "scissors") ||
+                (lowerHumanChoice === "scissors" && computerChoice === "paper") ||
+                (lowerHumanChoice === "paper" && computerChoice === "rock")
+            ) {
+                humanScore++;
+                console.log(`You win! ${lowerHumanChoice} beats ${computerChoice}`);
+            } else {
+                computerScore++;
+                console.log(`You lose! ${computerChoice} beats ${humanChoice}`);
+            }
+        }
+
         
     </script>
 </body>
