@@ -45,3 +45,15 @@ open index.html
 
 ## Credits
 Made with ❤ by [bit2swaz](https://www.github.com/bit2swaz/)
+
+---
+
+## What's Next
+- Add restart button
+- Add animations or sound effects
+- Polish with comments and code cleanup
+
+---
+
+## License
+This project is open source and free to use.
