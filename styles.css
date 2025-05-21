@@ -1,0 +1,127 @@
+body {
+            font-family: 'Inter', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 30px;
+            font-size: 2.5em;
+        }
+
+        .game-area {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            width: 100%;
+            max-width: 500px;
+            box-sizing: border-box;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 100%;
+        }
+
+        button {
+            padding: 12px 25px;
+            font-size: 1.1em;
+            font-weight: bold;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.1s ease;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            flex: 1 1 auto;
+            min-width: 120px;
+        }
+
+        button:hover {
+            transform: translateY(-2px);
+        }
+
+        button:active {
+            transform: translateY(0);
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        button:disabled {
+            background-color: #ccc;
+            cursor: not-allowed;
+            box-shadow: none;
+            transform: none;
+        }
+
+        #rockBtn {
+            background-color: #ff6b6b;
+            color: white;
+        }
+
+        #rockBtn:hover {
+            background-color: #ff4c4c;
+        }
+
+        #paperBtn {
+            background-color: #4ecdc4;
+            color: white;
+        }
+
+        #paperBtn:hover {
+            background-color: #3cb0a8;
+        }
+
+        #scissorsBtn {
+            background-color: #45b7d1;
+            color: white;
+        }
+
+        #scissorsBtn:hover {
+            background-color: #3598b2;
+        }
+
+        .results-section {
+            width: 100%;
+            text-align: center;
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+        }
+
+        #round-result {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #555;
+        }
+
+        #score-display {
+            font-size: 1.1em;
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        #game-winner {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #e74c3c;
+            margin-top: 20px;
+            padding: 10px;
+            border-radius: 8px;
+            background-color: #ffe0e0;
+        }
