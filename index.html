@@ -120,7 +120,12 @@
             }
         }
 
-        themeToggle.addEventListener("DOMContentLoaded", () => {
+        themeToggle.addEventListener("click", () => {
+            const isDarkMode = body.classList.contains("dark-mode");
+            setTheme(!isDarkMode);
+        });
+
+        document.addEventListener("DOMContentLoaded", () => {
             const savedTheme = localStorage.getItem("theme");
             if (savedTheme === "dark") {
                 setTheme(true);
