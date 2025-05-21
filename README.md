@@ -34,3 +34,8 @@ A clean, responsive, and modern Rock Paper Scissors game built using **HTML, CSS
 
 ---
 
+## How to Run Locally
+```bash
+git clone https://github.com/bit2swaz/rock-paper-scissors.git
+cd rock-paper-scissors
+open index.html
