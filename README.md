@@ -2,6 +2,15 @@
 
 A clean, responsive, and modern Rock Paper Scissors game built using **HTML, CSS, and JavaScript** with an interactive UI and theme toggle (light/dark mode). Built as part of [The Odin Project](https://www.theodinproject.com) curriculum.
 
-### Live Demo
+## Live Demo
 [Play the game](https://bit2swaz.github.io/rock-paper-scissors/)
+
+## Features
+- Fully functional rock-paper-scissors game logic
+- Theme toggle (light/dark mode) with localStorage persistence
+- Score tracking until either player reaches 5 points
+- Buttons auto-disable once the game ends
+- Fully responsive and mobile-friendly layout
+- Smooth transitions, hover effects, and modern styling
+- Clean and modular JS code for easy understanding and extensibility
 
