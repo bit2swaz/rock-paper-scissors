@@ -50,6 +50,8 @@ Made with ❤ by [bit2swaz](https://www.github.com/bit2swaz/)
 
 ## What's Next
 - Add restart button
+- Add keyboard support (R/P/S keys)
+- Use emojis on buttons for visual boost
 - Add animations or sound effects
 - Polish with comments and code cleanup
 
