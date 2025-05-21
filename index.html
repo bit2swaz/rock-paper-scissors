@@ -103,6 +103,55 @@
         const scoreDisplay = document.getElementById('score-display');
         const gameWinnerDisplay = document.getElementById('game-winner');
 
+        function getComputerChoice() {
+           const randomNumber = Math.random();
+
+            if (randomNumber < 0.333) {
+                return "rock";
+            }   else if (randomNumber < 0.666) {
+                return "paper";
+            }   else {
+                return "scissors";
+            }
+        } 
+
+        function playRound(playerSelection) {
+            if (humanScore >= 5 || computerScore >= 5) {
+                return;
+            }
+
+            const computerSelection = getComputerChoice;
+            const lowerPlayerSelection = playerSelection.toLowerCase();
+
+            let roundMessage = "";
+
+            if (lowerPlayerSelection === computerSelection) {
+                roundMessage = `It's a tie! You both chose  ${lowerPlayerSelection}.`;
+            } else if (
+                (lowerPlayerSelection === "rock" && computerSelection === "scissors") ||
+                (lowerPlayerSelection === "scissors" && computerSelection === "paper") ||
+                (lowerPlayerSelection === "paper" && computerSelection === "rock")
+            ) {
+                humanScore++;
+                roundMessage = `You win! ${lowerPlayerSelection} beats ${computerSelection}.`;
+            } else {
+                computerScore++;
+                roundMessage = `You lose! ${computerSelection} beats ${lowerPlayerSelection}.`;
+            }
+
+            roundResultDisplay.textContent = roundMessage;
+            scoreDisplay.textContent = `Human: ${humanScore} | Computer: ${computerScore}`;
+
+            if (humanScore === 5) {
+                gameWinnerDisplay.textContent = "CONGRATULATIONS! You reached 5 points and won the game!";
+                disableGameButtons();
+            } else if (computerScore === 5) {
+                gameWinnerDisplay.textContent = "GAME OVER! The computer reached 5 points and won the game!";
+                disableGameButtons();
+            }
+        }
+
+        
     </script>
 </body>
 </html>
