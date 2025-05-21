@@ -151,6 +151,15 @@
             }
         }
 
+        function disableGameButtons() {
+            rockButton.disabled = true;
+            paperButton.disabled = true;
+            scissorsButton.disabled = true;
+        }
+
+        rockButton.addEventListener('click', () => playRound('rock'));
+        paperButton.addEventListener('click', () => playRound('paper'));
+        scissorsButton.addEventListener('click', () => playRound('scissors'));
         
     </script>
 </body>
