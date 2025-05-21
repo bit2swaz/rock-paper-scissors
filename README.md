@@ -39,3 +39,9 @@ A clean, responsive, and modern Rock Paper Scissors game built using **HTML, CSS
 git clone https://github.com/bit2swaz/rock-paper-scissors.git
 cd rock-paper-scissors
 open index.html
+```
+
+---
+
+## Credits
+Made with ❤ by [bit2swaz](https://www.github.com/bit2swaz/)
