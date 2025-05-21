@@ -1,101 +1,125 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
+.theme-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 2em;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+    z-index: 102;
+}
+
+.theme-toggle:hover {
+    background-color: rgba(0,0,0,0.1);
+}
+
 body {
-            font-family: 'Inter', sans-serif;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            min-height: 100vh;
-            background-color: #f0f0f0;
-            margin: 0;
-            padding: 20px;
-            box-sizing: border-box;
-        }
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
 
-        h1 {
-            color: #333;
-            margin-bottom: 30px;
-            font-size: 2.5em;
-        }
+h1 {
+    color: #4caf50;
+    margin-bottom: 30px;
+    font-size: 2.5em;
+    text-shadow: none;
+    transition: color 0.5s ease;
+}
 
-        .game-area {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 20px;
-            background-color: #fff;
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-            width: 100%;
-            max-width: 500px;
-            box-sizing: border-box;
-        }
+.game-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 500px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    transition: background-color 0.5s ease, box-shadow 0.5s ease, border-color 0.5s ease;
+}
 
-        .buttons {
-            display: flex;
-            gap: 15px;
-            flex-wrap: wrap;
-            justify-content: center;
-            width: 100%;
-        }
+.buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
 
-        button {
-            padding: 12px 25px;
-            font-size: 1.1em;
-            font-weight: bold;
-            border: none;
-            border-radius: 8px;
-            cursor: pointer;
-            transition: background-color 0.3s ease, transform 0.1s ease;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            flex: 1 1 auto;
-            min-width: 120px;
-        }
+button {
+    padding: 12px 25px;
+    font-size: 1.1em;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    flex: 1 1 auto;
+    min-width: 120px;
+    color: white;
+}
 
-        button:hover {
-            transform: translateY(-2px);
-        }
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
 
-        button:active {
-            transform: translateY(0);
-            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-        }
+button:active {
+    transform: translateY(0);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
 
-        button:disabled {
-            background-color: #ccc;
-            cursor: not-allowed;
-            box-shadow: none;
-            transform: none;
-        }
+button:disabled {
+    background-color: #ccc;
+    color: #666;
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+}
 
-        #rockBtn {
-            background-color: #ff6b6b;
-            color: white;
-        }
+#rockBtn {
+    background-color: #ff6b6b;
+}
 
-        #rockBtn:hover {
-            background-color: #ff4c4c;
-        }
+#rockBtn:hover {
+    background-color: #ff4c4c;
+}
 
-        #paperBtn {
-            background-color: #4ecdc4;
-            color: white;
-        }
+#paperBtn {
+    background-color: #4ecdc4;
+}
 
-        #paperBtn:hover {
-            background-color: #3cb0a8;
-        }
+#paperBtn:hover {
+    background-color: #3cb0a8;
+}
 
-        #scissorsBtn {
-            background-color: #45b7d1;
-            color: white;
-        }
+#scissorsBtn {
+    background-color: #45b7d1;
+}
 
-        #scissorsBtn:hover {
-            background-color: #3598b2;
-        }
+#scissorsBtn:hover {
+    background-color: #3598b2;
+}
 
         .results-section {
             width: 100%;
