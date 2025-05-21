@@ -120,7 +120,7 @@
                 return;
             }
 
-            const computerSelection = getComputerChoice;
+            const computerSelection = getComputerChoice();
             const lowerPlayerSelection = playerSelection.toLowerCase();
 
             let roundMessage = "";
@@ -160,7 +160,7 @@
         rockButton.addEventListener('click', () => playRound('rock'));
         paperButton.addEventListener('click', () => playRound('paper'));
         scissorsButton.addEventListener('click', () => playRound('scissors'));
-        
+
     </script>
 </body>
 </html>
